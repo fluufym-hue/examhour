@@ -7,7 +7,7 @@ X = df[['HoursStudied']]
 y = df['ExamScore']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 model = LinearRegression()
-model.fit(X_train, Y_train)
+model.fit(X_train, y_train)
 st.title("Exam Score Predictor")
 st.write("Enter hours studied to predict the exam score.")
 hours = st.number_input("Hours Studied:", min_value=0.0, step=0.1)
